@@ -21,13 +21,13 @@ const homeTasks = [
 homeTasks.forEach(l => (l.Component = require(`./homeTasks/${l.id}/App`).default));
 
 const Links = () => (
-  <ul className="tasks-nav">
+  <ol className="tasks-nav">
     {homeTasks.map((l, i) => (
       <li key={l.id}>
         <Link to={`/homeTasks/${l.id}`}>{l.id}</Link>
       </li>
     ))}
-  </ul>
+  </ol>
 );
 
 const Back = () => (
@@ -36,11 +36,15 @@ const Back = () => (
   </div>
 );
 
+const Home = () => <h1>This is Sergii Sichkar React home tasks </h1>;
+
 class App extends React.Component {
   render() {
     return (
       <Router>
+
         <div>
+          <Home/>
           <Route exact path="/" component={Links} />
           <Route path="/homeTasks" component={Back} />
           {homeTasks.map(({ id, Component }) => (

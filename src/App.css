@@ -17,3 +17,7 @@ a.active {
 .header {
   border:1px solid blue;
 }
+
+h1 {
+  text-align: center;
+}

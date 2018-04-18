@@ -66,7 +66,7 @@ const Links = () => (
         <Link to="/">Back</Link>
     </nav>
 );
-const Home = () => <h1>Home11</h1>;
+
 const Button = require('../01-Button/App').default;
 const App = props => (
     <Router basename={props.path}>
