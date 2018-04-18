@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 const homeTasks = [
   { id: "01-Button" },
   { id: "02-Accardeon" },
-  { id: "03-NavLink" },
+ /* { id: "03-NavLink" },
   { id: "04-URL-Params" },
   { id: "05-URL-Regex" },
   { id: "06-Query-Params" },
@@ -15,7 +15,7 @@ const homeTasks = [
   { id: "10-Nested" },
   { id: "11-Redirect" },
   { id: "12-Prompt" },
-  { id: "13-Routers" }
+  { id: "13-Routers" }*/
 ];
 
 homeTasks.forEach(l => (l.Component = require(`./homeTasks/${l.id}/App`).default));
