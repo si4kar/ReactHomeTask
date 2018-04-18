@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 const homeTasks = [
   { id: "01-Button" },
   { id: "02-Accardeon" },
+  { id: "03-FocusDemo" },
  /* { id: "03-NavLink" },
   { id: "04-URL-Params" },
   { id: "05-URL-Regex" },
